@@ -72,4 +72,43 @@ body {
   color: #ffffff;
 }
 
+// color picker
+.color-picker-wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#color-input {
+  display: none;
+}
+
+#color-label {
+  margin-left: 15px;
+  position: absolute;
+  height: 30px;
+  width: 50px;
+  display: none;
+}
+
+#color-input:checked ~ #color-picker {
+  opacity: 1;
+}
+
+#color-picker {
+  display: flex;
+  gap: 6px;
+  background-color: white;
+  height: 150px;
+  width: 185px;
+  border: solid 1px #ccc;
+  opacity: 0;
+  padding: 5px;
+}
+
+canvas:hover {
+  cursor: crosshair;
+}
+// /color picker
+
 // === / COMMON ===

@@ -15,6 +15,19 @@
     </h2>
 
     <button id="btn" class="btn">Сменить цвет</button>
+
+    <!-- color picker -->
+    <div class="color-picker-wrap">
+      <label for="color-input" id="color-label" style="background-color: red"></label>
+      <input type="checkbox" id="color-input" checked></input>
+
+      <div id="color-picker">
+        <canvas id="color-block" height="150" width="150"></canvas>
+        <canvas id="color-strip" height="150" width="30"></canvas>
+      </div>
+    </div>    
+    <!-- /color picker -->
+  </div>
   </div>
   
   <script src="js/scripts.min.js"></script>
